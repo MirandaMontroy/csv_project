@@ -57,32 +57,19 @@ def main():
     fig2, a = plt.subplots(2)
 
     fig2.suptitle(f"Temperature comparison between {title1} and {title2}")
-    #fig2.autofmt_xdate()
 
-    a[0].set_title(title1, fontsize=16)
+    a[0].set_title(title1, fontsize=12)
     a[0].plot(date1, high1, c="red")
     a[0].plot(date1, low1, c="blue")
     a[0].fill_between(date1, high1, low1, facecolor='blue', alpha=0.1)
-    a[0].set_xlabel("")
+    a[0].set_xticklabels([])
 
-    a[1].set_title(title2, fontsize=16)
+    a[1].set_title(title2, fontsize=12)
     a[1].plot(date2, high2, c="red")
     a[1].plot(date2, low2, c="blue")
     a[1].fill_between(date2, high2, low2, facecolor='blue', alpha=0.1)
 
-
-    plt.xlabel("", fontsize=12)
-    plt.ylabel("Temperature (F)", fontsize=12)
- #   plt.tick_params(axis="both", labelsize=12)
-
     plt.show()
 
-'''
-fig2, a = plt.subplots(2)
 
-a[0].plot(dates, highs, c="red")
-a[1].plot(dates, lows, c="blue")
-
-plt.show()
-'''
 main()
