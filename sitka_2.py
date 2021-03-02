@@ -28,7 +28,7 @@ for row in csv_file:
     dates.append(converted_date)
 
 
-#print(highs)
+
 
 import matplotlib.pyplot as plt
 

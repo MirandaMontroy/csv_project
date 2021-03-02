@@ -1,4 +1,4 @@
-import csv
+import csv 
 
 open_file= open("sitka_weather_07-2018_simple.csv", "r")
 

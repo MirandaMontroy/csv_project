@@ -1,6 +1,6 @@
 import csv
 from datetime import datetime
-
+  
 open_file= open("death_valley_2018_simple.csv", "r")
 
 csv_file = csv.reader(open_file, delimiter=',')
